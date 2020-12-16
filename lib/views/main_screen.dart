@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ebook_app/util/dialogs.dart';
-import 'package:flutter_ebook_app/views/explore/explore.dart';
-import 'package:flutter_ebook_app/views/home/home.dart';
-import 'package:flutter_ebook_app/views/settings/settings.dart';
+import 'package:flutter_ebook_app/views/home.dart';
+import 'package:flutter_ebook_app/views/settings.dart';
 import 'package:flutter_icons/flutter_icons.dart';
 
 class MainScreen extends StatefulWidget {
@@ -25,7 +24,6 @@ class _MainScreenState extends State<MainScreen> {
           onPageChanged: onPageChanged,
           children: <Widget>[
             Home(),
-            Explore(),
             Profile(),
           ],
         ),
@@ -42,14 +40,6 @@ class _MainScreenState extends State<MainScreen> {
               ),
               title: Text(
                 'Home',
-              ),
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(
-                Feather.compass,
-              ),
-              title: Text(
-                'Explore',
               ),
             ),
             BottomNavigationBarItem(

@@ -5,7 +5,7 @@ import 'package:flutter_ebook_app/models/category.dart';
 import 'package:flutter_ebook_app/util/router.dart';
 import 'package:uuid/uuid.dart';
 
-import '../views/details/details.dart';
+import '../views/details.dart';
 
 class BookItem extends StatelessWidget {
   final String img;

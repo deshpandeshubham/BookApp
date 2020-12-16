@@ -7,7 +7,7 @@ import 'package:flutter_ebook_app/models/category.dart';
 import 'package:flutter_ebook_app/util/consts.dart';
 import 'package:flutter_ebook_app/util/router.dart';
 import 'package:flutter_ebook_app/view_models/home_provider.dart';
-import 'package:flutter_ebook_app/views/genre/genre.dart';
+import 'package:flutter_ebook_app/views/genre.dart';
 import 'package:provider/provider.dart';
 
 class Home extends StatefulWidget {
@@ -64,9 +64,7 @@ class _HomeState extends State<Home> with AutomaticKeepAliveClientMixin {
           SizedBox(height: 20.0),
           _buildGenreSection(homeProvider),
           SizedBox(height: 20.0),
-          //_buildSectionTitle('Recently Added'),
-          //SizedBox(height: 20.0),
-          _buildNewSection(homeProvider),
+         _buildNewSection(homeProvider),
         ],
       ),
     );

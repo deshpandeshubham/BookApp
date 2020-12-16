@@ -2,7 +2,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_ebook_app/models/category.dart';
 import 'package:flutter_ebook_app/util/api.dart';
-import 'package:flutter_ebook_app/util/enum/api_request_status.dart';
+import 'package:flutter_ebook_app/util/api_request_status.dart';
 
 class HomeProvider with ChangeNotifier {
   CategoryFeed top = CategoryFeed();
@@ -20,14 +20,6 @@ class HomeProvider with ChangeNotifier {
       setApiRequestStatus(APIRequestStatus.loaded);
     } catch (e) {}
   }
-
-  /*void checkError(e) {
-    if (Functions.checkConnectionError(e)) {
-      setApiRequestStatus(APIRequestStatus.connectionError);
-    } else {
-      setApiRequestStatus(APIRequestStatus.error);
-    }
-  }*/
 
   void setApiRequestStatus(APIRequestStatus value) {
     apiRequestStatus = value;
